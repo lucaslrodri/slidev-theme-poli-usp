@@ -1,6 +1,6 @@
 # slidev-theme-poli-usp
 
-[![NPM version](https://img.shields.io/npm/v/slidev-theme-slidev-usp-theme?color=3AB9D4&label=)](https://www.npmjs.com/package/slidev-theme-slidev-usp-theme)
+[![NPM version](https://img.shields.io/npm/v/slidev-theme-poli-usp?color=3AB9D4)](https://www.npmjs.com/package/slidev-theme-poli-usp)
 
 A theme for [Slidev](https://github.com/slidevjs/slidev), for [Polytechnic School](https://www.poli.usp.br/) (Poli) of [USP](https://www5.usp.br/) (University of São Paulo) 
 
