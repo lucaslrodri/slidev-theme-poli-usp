@@ -1,0 +1,188 @@
+/* Components */
+.slidev-layout {
+
+  /* Blockquote & Card */
+  blockquote {
+    /* Paragraph */
+    p {
+      @apply my-2;
+    }
+
+    /* Sub-Title */
+    h4 {
+      @apply mt-2 text-xl leading-normal;
+    }
+
+    h5{
+      @apply mt-2 mb-1;
+    }
+
+    h4::after {
+      @apply h-0.75 w-12;
+    }
+
+    /* Li */
+  }
+
+  .card .centering, .topic .centering, .card.centering, .topic.centering {
+    @apply text-center;
+
+    h4 {
+      @apply text-left;
+    }
+  }
+
+  .card .icon, .topic .icon{
+    @apply transition-all flex-none;
+  }
+
+  .card:not(.active) {
+    @apply border-grays-200;
+  }
+
+  .card.secondary {
+    @apply !border-secondary;
+  }
+  .card.secondary.slidev-vclick-current.active {
+    @apply bg-secondary-100 border-secondary;
+  }
+  .card.secondary-dark.slidev-vclick-current.active {
+    @apply bg-secondary-200;
+  }
+  .card.secondary .icon{
+    @apply text-secondary;
+  }
+
+  .card.primary, .card.primary-dark {
+    @apply !border-primary;
+  }
+  .card.primary.slidev-vclick-current.active {
+    @apply bg-primary-200;
+  }
+  .card.primary-dark.slidev-vclick-current.active {
+    @apply bg-primary-300;
+  }
+  .card.primary .icon{
+    @apply text-primary;
+  }
+
+  .card.safe, .card.safe-dark {
+    @apply !border-safe;
+  }
+  .card.safe.slidev-vclick-current.active {
+    @apply bg-safe-200;
+  }
+  .card.safe-dark.slidev-vclick-current.active {
+    @apply bg-safe-300;
+  }
+  .card.safe .icon{
+    @apply text-safe;
+  }
+  
+  .card.danger, .card.danger-dark {
+    @apply !border-danger;
+  }
+  .card.danger.slidev-vclick-current.active {
+    @apply bg-danger-100;
+  }
+  .card.danger-dark.slidev-vclick-current.active {
+    @apply bg-danger-300;
+  }
+  .card.danger .icon{
+    @apply text-danger;
+  }
+
+  .card.gray {
+    @apply !border-grays-400;
+  }
+  .card.gray.slidev-vclick-current.active {
+    @apply bg-grays-100;
+  }
+  .card.gray-dark.slidev-vclick-current.active {
+    @apply bg-grays-200;
+  }
+  .card.gray .icon{
+    @apply text-grays-400;
+  }
+
+  .card.slidev-vclick-hidden .icon{
+    @apply text-grays-300;
+  }
+
+  .topic {
+    @apply rounded-0 border-grays-200 relative overflow-visible;
+  }
+
+  .topic:not(.active) {
+    @apply border-grays-200;
+  }
+
+  .topic::after {
+    content: '';
+    @apply absolute -inset-y-1px -left-1px w-1;
+  }
+
+  .topic.secondary,
+  .topic.default {
+    @apply after:bg-secondary;
+  }
+  .topic.secondary .icon, .topic.default .icon{
+    @apply text-secondary;
+  }
+  .topic.secondary.slidev-vclick-current.active,
+  .topic.default.slidev-vclick-current.active {
+    @apply border-secondary;
+  }
+
+  .topic.primary {
+    @apply after:bg-primary;
+  }
+  .topic.primary .icon{
+    @apply text-primary;
+  }
+  .topic.primary.slidev-vclick-current.active {
+    @apply border-primary;
+  }
+
+  .topic.safe {
+    @apply after:bg-safe;
+  }
+  .topic.safe .icon{
+    @apply text-safe;
+  }
+  .topic.safe.slidev-vclick-current.active {
+    @apply border-safe;
+  }
+
+  .topic.danger {
+    @apply after:bg-danger;
+  }
+  .topic.danger .icon{
+    @apply text-danger;
+  }
+  .topic.danger.slidev-vclick-current.active {
+    @apply border-danger;
+  }
+
+  .topic.gray {
+    @apply after:bg-grays-400;
+  }
+  .topic.gray .icon{
+    @apply text-grays-400;
+  }
+  .topic.gray.slidev-vclick-current.active {
+    @apply border-grays-400;
+  }
+
+  .topic.slidev-vclick-hidden {
+    @apply after:bg-grays-200;
+
+    .icon{
+      @apply text-grays-300;
+    }
+  }
+
+  .slider-card {
+    @apply !p-0;
+  }
+}

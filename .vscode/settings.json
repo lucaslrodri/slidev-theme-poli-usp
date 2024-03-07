@@ -1,0 +1,33 @@
+{
+    "css.customData": [
+        ".vscode/unocss.json"
+    ],
+    "highlight.regexes": {
+        "(==)([^=\\n]*)(==)(?:{([^}]+)})?|(`[^`\\n]+`)|(?:`{3,}(?=[^`\\n]*\\n))(:?[^\\n]*)(?:|(?:[\\s\\S]*?)\\n)`{3,}":{
+            "regexFlags": "g",
+            "filterLanguageRegex": "markdown",
+            "decorations": [
+                {"backgroundColor": "#FFE094"},
+                {"backgroundColor": "#FFE094"},
+                {"backgroundColor": "#FFE094"},
+                {"backgroundColor": "#FFE09400"},
+                {"backgroundColor": "#FFE09400"},
+            ]
+        },
+        "(::){([^}]+)}|(`[^`\\n]+`)|(?:`{3,}(?=[^`\\n]*\\n))(:?[^\\n]*)(?:|(?:[\\s\\S]*?)\\n)`{3,}":{
+            "regexFlags": "g",
+            "filterLanguageRegex": "markdown",
+            "decorations": [
+                {"backgroundColor": "#BFF0F4"}
+            ]
+        },
+        "(\\|)([^)\\n]+)\\)(?:{([^}]+)})?|(`[^`\\n]+`)|(?:`{3,}(?=[^`\\n]*\\n))(:?[^\\n]*)(?:|(?:[\\s\\S]*?)\\n)`{3,}":{
+            "regexFlags": "g",
+            "filterLanguageRegex": "markdown",
+            "decorations": [
+                {"color": "#F74360"},
+                {"color": "#F74360"}
+            ]
+        }
+    },
+}

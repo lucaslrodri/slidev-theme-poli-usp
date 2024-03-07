@@ -1,0 +1,49 @@
+{
+  "name": "slidev-theme-poli-usp",
+  "version": "0.0.0",
+  "type": "module",
+  "keywords": [
+    "slidev-theme",
+    "slidev"
+  ],
+  "engines": {
+    "node": ">=18.0.0",
+    "slidev": ">=0.19.3"
+  },
+  "scripts": {
+    "build": "slidev build example.md",
+    "dev": "slidev example.md",
+    "export": "slidev export example.md --per-slide --with-clicks --output example",
+    "screenshot": "slidev export example.md --per-slide --format png --output screenshots"
+  },
+  "dependencies": {
+    "@slidev/types": "^v0.48.0-beta.0",
+    "codemirror-theme-vars": "^0.1.2",
+    "prism-theme-vars": "^0.2.4",
+    "theme-vitesse": "^0.7.5"
+  },
+  "devDependencies": {
+    "@iconify-json/material-symbols": "^1.1.70",
+    "@iconify-json/mdi": "^1.1.64",
+    "@slidev/cli": "^v0.48.0-beta.0"
+  },
+  "//": "Learn more: https://sli.dev/themes/write-a-theme.html",
+  "slidev": {
+    "colorSchema": "light",
+    "highlighter": "all",
+    "defaults": {
+      "fonts": {
+        "sans": "Lato",
+        "mono": "Fira Code"
+      },
+      "themeConfig": {
+        "primary": "#00C6D4"
+      },
+      "mdc": true,
+      "hightlighter": "prism",
+      "htmlAttrs": {
+        "lang": "pt-br"
+      }
+    }
+  }
+}

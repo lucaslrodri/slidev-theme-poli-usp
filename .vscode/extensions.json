@@ -1,0 +1,9 @@
+{
+  "recommendations": [
+    "antfu.slidev",
+    "fabiospampinato.vscode-highlight",
+    "nuxt.mdc",
+    "antfu.unocss",
+    "vue.volar"
+  ]
+}

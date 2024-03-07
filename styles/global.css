@@ -1,0 +1,178 @@
+/* Global */
+.slidev-layout{
+  /* Global */
+  @apply py-6 text-xl leading-normal;
+
+  /* Paragraph */
+  p{
+    @apply text-grays-700 text-xl leading-normal;
+  }
+
+  /* Paragraph */
+  blockquote{
+    @apply bg-white text-grays-700 text-xl leading-normal;
+    @apply border rounded-md shadow p-3 my-4 relative overflow-hidden border-grays-200;
+  }
+  blockquote + h4{
+    @apply mt-6;
+  }
+
+  blockquote.slidev-vclick-current{
+    @apply border-secondary;
+  }
+
+  .n-grid-container{
+    blockquote, p{
+      @apply my-0;
+    }
+  }
+
+  /* Elements */
+  kbd{
+    @apply text-grays-700 text-xl leading-tight;
+  }
+
+  /* List */
+  li{
+    @apply text-grays-700 text-xl leading-normal;
+  }
+  ol, ul{
+    @apply my-2;
+  }
+  ul{
+    @apply list-disc;
+  }
+  ul > li::marker{
+    content: url("data:image/svg+xml, <svg width='8pt' height='8pt' version='1.1' viewBox='0 0 16 16' xmlns='http://www.w3.org/2000/svg'><rect transform='rotate(-15)' x='-1.5046' y='2.5589' width='14.111' height='14.111' rx='3.5278' ry='3.5278' fill='%23FFC840' opacity='.67'/></svg>") " ";
+  }
+  ul ul > li::marker{
+    content: url("data:image/svg+xml, <svg width='8pt' height='8pt' version='1.1' viewBox='0 0 18.869 18.869' xmlns='http://www.w3.org/2000/svg'><rect transform='rotate(-15)' x='-.38447' y='4.4991' width='14.111' height='14.111' rx='3.5278' ry='3.5278' fill='%23FFF' stroke='%23FFC840' stroke-width='3.175' opacity='.67'/></svg>") " ";
+  }
+  ol{
+    counter-reset: ol-counter;
+  }
+  ol > li{
+    counter-increment: ol-counter;
+    @apply relative list-none;
+  }
+  ol > li::before{
+    content: counter(ol-counter) " ";
+    --size: 1rem;
+    position: absolute;
+    left: calc(-1 * var(--size) - 10px);
+    top: .33rem;
+    font-size: 1rem;
+    @apply font-semibold text-grays text-center text-lg leading-tight;
+    @apply absolute bg-contain bg-no-repeat bg-center min-w-6.5 min-h-6.5;
+    background-image: url("data:image/svg+xml, <svg version='1.1' viewBox='0 0 17 17' xmlns='http://www.w3.org/2000/svg'><rect transform='rotate(-9)' x='.5146' y='1.7589' width='14.111' height='14.111' rx='3.5278' ry='3.5278' fill='%23FFC840' opacity='.6'/></svg>")
+  }
+  ul > li.slidev-vclick-current,
+  ol > li.slidev-vclick-current{
+    transform-origin: left;
+    @apply scale-105 transition;
+  }
+
+  /*Link*/
+  a{
+    background-position: 0 1.1em;
+    background-size: 100% 2px;
+    @apply text-grays-700 !border-0 transition-all;
+    @apply bg-no-repeat from-secondary to-secondary bg-gradient-to-r from-0% to-100%;
+  }
+  a:hover{
+    @apply text-grays-700 text-primary;
+  }
+
+  /*Paragraph*/
+  p{
+    @apply my-1;
+  }
+
+  /*Images*/
+  figure.inside{
+    @apply relative overflow-hidden;
+    p{
+      @apply m-0 leading-0;
+    }
+    img{
+      @apply block size-full;
+    }
+    figcaption{
+        @apply absolute left-2 bottom-2 bg-black/50 py-0 px-2 rounded;
+        p, a{
+          @apply text-base text-white;
+        }
+        a:hover{
+          @apply text-secondary;
+        }
+    }
+  }
+  figure.outside{
+    figcaption{
+        @apply block py-0 px-2 border-l-2 border-l-primary flex-none;
+        p, a{
+          @apply text-base text-grays-500;
+        }
+        a:hover{
+          @apply text-primary;
+        }
+    }
+  }
+
+  /* Tables */
+  table{
+    @apply rounded-lg overflow-hidden divide-y shadow border;
+    thead{
+      th {
+        @apply bg-primary text-white border border-grays-100;
+        @apply py-2;
+      }
+    } 
+    tbody{
+      tr{
+        @apply border border-grays-100 rounded-xl py-0;
+        td{
+          @apply py-2;
+        }
+      }
+    }
+  }
+  caption{
+    @apply block pt-2 px-2 border-l-primary flex-none text-grays-500 text-base text-center;
+    p, a{
+      @apply text-base text-grays-500;
+    }
+    a:hover{
+      @apply text-primary;
+    }
+  }
+
+  /* Title */
+  h1, h2, h3 {
+    @apply text-grays-700 text-4xl font-400 leading-tight relative uppercase mb-8;
+  }
+  h1::after, h2::after, h3::after{
+    content: '';
+    @apply absolute -bottom-2 left-0 w-24 bg-secondary block h-1.25 rounded-full;
+  }
+
+  /* Sub-Title */
+  h4{
+    @apply text-2xl leading-normal relative;
+    @apply font-600 text-grays-700;
+    @apply mt-3 mb-4;
+  }
+  h4::after{
+      content: "";
+      @apply absolute -bottom-1 left-0 w-16 bg-secondary block h-1 rounded-full;
+  }
+  /* h4 + p{
+    @apply pt-2;
+  }
+ */
+  /* Inside elements Title */
+  h5 {
+    @apply text-grays-700 font-semibold text-xl leading-normal;
+    @apply mt-4;
+  }
+}

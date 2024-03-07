@@ -1,0 +1,31 @@
+/* Templates */
+
+.slidev-layout.cover {
+  @apply text-center text-grays-700;
+  h1 {
+    @apply;
+  }
+  h1::after{
+    @apply left-40% right-40%;
+  }
+
+  h1 + p {
+    @apply text-grays-400 py-6 font-300 text-xl italic;
+  }
+
+  p{
+    @apply my-4 font-400 text-xl leading-3 text-grays-700;
+  }
+}
+
+.slide-header{
+  h1 + p, h2 + p, h3 + p {
+    @apply text-grays-400 font-300 italic -mt-4 mb-4;
+  }
+}
+
+.slidev-layout.section{
+  h1 + p, h2 + p, h3 + p {
+    @apply text-grays-400 font-300 italic -mt-4;
+  }
+}

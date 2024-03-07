@@ -1,0 +1,14 @@
+:root {
+  /* default theme color */
+  /* can be overrided by uses `themeConfig` option */
+  --slidev-theme-primary: #00C6D4;
+  @apply text-grays-700;
+}
+
+.slidev-page, .slidev-layout{
+  @apply pl-18% pr-7%;
+}
+
+.slidev-vclick-hidden{
+  @apply !opacity-40;
+}
